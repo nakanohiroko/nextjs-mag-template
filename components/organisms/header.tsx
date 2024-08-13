@@ -60,7 +60,7 @@ async function Header() {
             <Logo logo={logoHeader} alt={settingsData.siteName || defaultSettings.siteName} />
           </div>
           <div className="header__right">
-            { menuOnHeader?.length &&
+            { menuOnHeader?.length !== 0 &&
               <div className="btn-group">
                 { menuOnHeader.map((btn: Button, index: string) => RenderButton(btn, index)) }
               </div>

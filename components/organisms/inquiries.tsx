@@ -27,7 +27,7 @@ async function Inquiries() {
             </div>
           }
 
-          { inquiries.buttons && inquiries.buttons.length &&
+          { inquiries.buttons && inquiries.buttons.length !== 0 &&
             <div className="inquiries__btns">
               { inquiries.buttons.map((btn, index) =>
                 <Btn href={btn.href} _blank={btn.openNewTab} size="large" key={btn.name}>

@@ -26,7 +26,7 @@ async function MenuExpanded() {
           <div className="container">
             <div className="menu-expanded__main__inner">
               <div className="menu-expaned__left">
-                { menuMain?.length && 
+                { menuMain?.length !== 0 && 
                   <ul className='menu-expanded__list menu-expanded--main'>
                     { menuMain.map((link: Button, index: number) => 
                       <li key={index} className='menu-expanded__link'>
@@ -40,7 +40,7 @@ async function MenuExpanded() {
               <Divider type={'slash'} className={'sp'} />
 
               <div className="menu-expaned__right">
-                { menuOther?.length && 
+                { menuOther?.length !==0 && 
                   <ul className='menu-expanded__list menu-expanded--other'>
                     { menuOther.map((link: Button, index: number) => 
                       <li key={index} className='menu-expanded__link'>

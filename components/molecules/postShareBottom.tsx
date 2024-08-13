@@ -22,6 +22,7 @@ function PostShareBottom({ socialShares }: { socialShares: string[] }) {
   }, [])
 
   return (
+    socialList.length !== 0 &&
     <div className="sharebottom">
       <div className="sharebottom__header">
         <div className="sharebottom__title">

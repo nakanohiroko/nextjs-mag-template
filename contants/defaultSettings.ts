@@ -3,7 +3,7 @@ export const defaultSettings = {
   title: 'MAG - MicroCMS Template',
   description: 'MAG - description of MicroCMS template',
   postLimit: 10, // default: 10
-  postMainVisualLimit: 3,
+  postMainVisualLimit: 0,
   postRankLimit: 5,
   postRelatedLimit: 4,
   postShareText: 'SNSでシェア',
